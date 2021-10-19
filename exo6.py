@@ -1,7 +1,7 @@
 import argparse
 from struct import pack
 from sys import argv
-from scapy.all import ARP, Ether, IP, srp
+from scapy.all import *
 
 interface = iface=argv[1]
 ip = iface=argv[2]
