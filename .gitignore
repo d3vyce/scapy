@@ -1,2 +1,7 @@
 *.pyc
 workspace.code-workspace
+projet/ldlinux.c32
+projet/libutil.c32
+projet/menu.c32
+projet/pxelinux.0
+projet/pxelinux.cfg/default
