@@ -8,9 +8,6 @@ dst_port = 0
 dst_addr = 0
 buffer = ""
 
-#print(pcap[9].show())
-#print(pcap[9][Raw].load.decode("utf-8"))
-
 for pck in pcap:
     if(pck[Ether].type == 2048):
         if(pck[IP].proto == 17): 
