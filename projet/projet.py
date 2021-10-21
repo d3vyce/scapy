@@ -17,7 +17,7 @@ for pck in pcap:
                             os.makedirs(os.path.dirname(filename))          # Si oui creer le dossier
                     with open(filename, 'w') as file:   # Creation du fichier
                         file.write(buffer)              # Ecriture du buffer dans le fichier
-                        buffer = ""                     # Reset buffer
+                    buffer = ""                     # Reset buffer
                 dst_port = pck[UDP].sport
                 filename = pck[TFTP].filename.decode("utf-8")
                 i = 0
