@@ -24,5 +24,5 @@ for pck in pcap:
             elif("File Not Found" in pck.sprintf("%load%")):    # Check que le request concerne un fichier existant
                 print(f"{filename} : File Not Found")
             elif(pck[UDP].dport == dst_port and "blksize" not in pck.sprintf("%load%")): # Check que c'est un packet DATA et non un accuse de réception
-                buffer += pck[Raw].load.decode('utf-8', 'replace') # Conversion du load (byte) en str avec remplacement des caracteres inexistant + stockage dans buffer
+                buffer += pck[Raw].load.decode('utf-8', 'replace') # Conversion du load (byte) en str avec remplacement des caracteres non-decodable + stockage dans buffer
                 i += 1
