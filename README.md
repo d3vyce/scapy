@@ -24,3 +24,7 @@ sudo python3 exo9.py [PROTO] [DOMAIN] [START-PORT] [END-PORT]
 
 ### Exercice 10
 python3 exo10.py
+
+### Projet n°3
+cd projet/
+python3 projet.py
